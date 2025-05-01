@@ -360,6 +360,6 @@ app.post('/api/update-inventory', async (req, res) => {
         res.status(500).json({ error: 'Échec de la mise à jour de l\'inventaire en lot.' });
     }
 });
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server listening on port ${PORT}`);
 });
